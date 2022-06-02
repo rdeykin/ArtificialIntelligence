@@ -1,0 +1,91 @@
+Starting on 4-21 at 19:17:28
+
+Question q1
+===========
+
+*** PASS: test_cases/q1/1-tinygrid.test
+*** PASS: test_cases/q1/2-tinygrid-noisy.test
+*** PASS: test_cases/q1/3-bridge.test
+*** PASS: test_cases/q1/4-discountgrid.test
+
+### Question q1: 4/4 ###
+
+
+Question q2
+===========
+
+*** PASS: test_cases/q2/1-bridge-grid.test
+
+### Question q2: 1/1 ###
+
+
+Question q3
+===========
+
+*** PASS: test_cases/q3/1-question-3.1.test
+*** PASS: test_cases/q3/2-question-3.2.test
+*** PASS: test_cases/q3/3-question-3.3.test
+*** PASS: test_cases/q3/4-question-3.4.test
+*** PASS: test_cases/q3/5-question-3.5.test
+
+### Question q3: 5/5 ###
+
+
+Question q4
+===========
+
+*** PASS: test_cases/q4/1-tinygrid.test
+*** PASS: test_cases/q4/2-tinygrid-noisy.test
+*** PASS: test_cases/q4/3-bridge.test
+*** PASS: test_cases/q4/4-discountgrid.test
+
+### Question q4: 1/1 ###
+
+
+Question q5
+===========
+
+*** FAIL: Exception raised: runValueIteration() takes 1 positional argument but 5 were given
+*** 
+*** Traceback (most recent call last):
+***   File "/Users/rafideykin/ArtificialIntelligence/project4/p4/grading.py", line 79, in grade
+***     util.TimeoutFunction(getattr(gradingModule, q), 1800)(
+***   File "/Users/rafideykin/ArtificialIntelligence/project4/p4/util.py", line 702, in __call__
+***     result = self.function(*args, **keyArgs)
+***   File "/Users/rafideykin/ArtificialIntelligence/project4/p4/autograder.py", line 312, in <lambda>
+***     return lambda grades: question.execute(grades)
+***   File "/Users/rafideykin/ArtificialIntelligence/project4/p4/testClasses.py", line 57, in execute
+***     if not f(grades):
+***   File "/Users/rafideykin/ArtificialIntelligence/project4/p4/autograder.py", line 307, in <lambda>
+***     return lambda grades: testCase.execute(grades, moduleDict, solutionDict)
+***   File "reinforcementTestClasses.py", line 60, in execute
+***     testPass, stdOutString, fileOutString = self.executeNIterations(grades, moduleDict, solutionDict, n, checkPolicy)
+***   File "reinforcementTestClasses.py", line 73, in executeNIterations
+***     valuesPretty, qValuesPretty, actions, policyPretty = self.runAgent(moduleDict, n)
+***   File "reinforcementTestClasses.py", line 227, in runAgent
+***     agent = moduleDict['valueIterationAgents'].PrioritizedSweepingValueIterationAgent(self.grid, discount=self.discount, iterations=numIterations)
+***   File "valueIterationAgents.py", line 181, in __init__
+***     ValueIterationAgent.__init__(self, mdp, discount, iterations)
+***   File "valueIterationAgents.py", line 61, in __init__
+***     self.runValueIteration(mdp, discount, iterations, mdp_states)
+*** TypeError: runValueIteration() takes 1 positional argument but 5 were given
+*** 
+
+### Question q5: 0/3 ###
+
+
+Finished at 19:17:29
+
+Provisional grades
+==================
+Question q1: 4/4
+Question q2: 1/1
+Question q3: 5/5
+Question q4: 1/1
+Question q5: 0/3
+------------------
+Total: 11/14
+
+Your grades are NOT yet registered.  To register your grades, make sure
+to follow your instructor's guidelines to receive credit on your project.
+
